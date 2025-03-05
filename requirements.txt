@@ -1,0 +1,10 @@
+streamlit
+python-dotenv
+faiss-gpu-cu12
+langchain-community
+langchain-core
+langchain
+nltk
+groq
+llm-guard
+langchain-groq
