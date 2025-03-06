@@ -13,7 +13,7 @@ class UI:
                 "Select Model Behavior",
                 ("Technical (Default)", "Casual"),
             )
-            self.uploaded_files = st.file_uploader(label="Upload Your Files", accept_multiple_files=True, type=['pdf', 'csv', 'text', 'json'])
+            self.uploaded_files = st.file_uploader(label="Upload Your Files", accept_multiple_files=True, type=['pdf', 'csv', 'text', 'txt'])
             st.divider()
             st.info('Custom API Keys are not stored', icon="ℹ️")
             with st.popover("Custom API Keys"):

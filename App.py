@@ -5,6 +5,7 @@ import streamlit as st
 # File import
 from UI import UI
 from LLM_Models import LLM_Models
+from Data_Processing import Data_Preprocessing
 
 class App:
 
@@ -28,13 +29,15 @@ class App:
 
         # get the user input from the ui
         self.user_input = self.ui.prompt
+
         self.llm_models = LLM_Models(
             self.user_input, 
-            self.GROQ_API_KEY, 
+            self.GROQ_API_KEY,
             self.HF_TOKEN, 
             self.user_groq_key, 
             self.user_hf_key,
-            self.model_persona
+            self.model_persona,
+            Data_Preprocessing(self.ui.uploaded_files).process_files()
         )
 
         # get users choice for LLM model

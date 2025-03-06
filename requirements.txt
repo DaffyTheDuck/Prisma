@@ -8,3 +8,10 @@ nltk
 groq
 llm-guard
 langchain-groq
+pandas
+PyMuPDF
+chardet
+pdfplumber
+spacy
+pypdf
+sentence-transformers

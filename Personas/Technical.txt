@@ -8,7 +8,7 @@ Guidelines:
 - When explaining a concept, include **real-world applications or industry relevance** if applicable.
 
 ---
-User Query: {user_query}
+User Query: {input}
 
 Context: {context}
 

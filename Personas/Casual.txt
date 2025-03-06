@@ -5,7 +5,7 @@ Keep your tone conversational, slightly witty, and relatable, but still informat
 Use contractions, avoid overly technical jargon unless needed, and throw in light humor where appropriate. 
 
 ---
-User Query: {user_query}
+User Query: {input}
 
 Context: {context}
 
