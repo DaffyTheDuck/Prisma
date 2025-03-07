@@ -201,7 +201,7 @@ class LLM_Models:
                     output_messages_key="answer"
                 )
                 
-                self.self.deepseek_response = self.conv_rag_chain.invoke(
+                self.deepseek_response = self.conv_rag_chain.invoke(
                     {"input": self.user_input},
                     config={
                         "configurable": {"session_id": self.session_options}
