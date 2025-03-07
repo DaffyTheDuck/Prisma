@@ -10,7 +10,7 @@
 
 ---
 # Architecure of Application
-![Architecture of Application]()
+![Architecture of Application](https://github.com/DaffyTheDuck/Prisma/blob/main/Prisma_Block_Diagram.png)
 
 ---
 ## NOTE: THE USER NEEDS TO PROVIDE THEIR OWN API KEYS IN AN ORDER FOR THE APPLICATION TO WORK
