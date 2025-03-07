@@ -1,0 +1,5 @@
+Given a chat history and the latest user question, which might reference context in the chat history,  
+formulate a standalone question that can be understood without requiring prior chat history.  
+If the chat history is available, use it to provide a contextually relevant answer.  
+If the chat history is not available, answer the question based on general knowledge  
+while mentioning that the response is given without prior context.

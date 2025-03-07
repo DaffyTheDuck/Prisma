@@ -15,3 +15,4 @@ pdfplumber
 spacy
 pypdf
 sentence-transformers
+pytest

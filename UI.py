@@ -5,6 +5,7 @@ class UI:
     def __init__(self):
         with st.sidebar:
             self.title = st.title("Prisma")
+            self.session_options = ["default"]
             self.model_options = st.selectbox(
                 "Select a LLM Model",
                 ("LLaMA (Default)", "Gemma", "DeepSeek R1"),
@@ -22,8 +23,15 @@ class UI:
                 self.custom_hf_key = st.text_input("Your Custom Hugging Face API Key", type='password')
             st.divider()
             st.markdown("Sessions")
-            self.current_session = st.text_input(label="Current Session 🕒", placeholder='default', value="default")
-        
+            with st.popover("Manage Sessions"):
+                self.current_session = st.text_input(label="Current Session 🕒", placeholder='default', value="default")
+                if self.current_session not in self.session_options:
+                    self.session_options.append(self.current_session)
+                self.session_options = st.selectbox(
+                    "Select Session",
+                    options=self.session_options,
+                )
+
         if "messages" not in st.session_state:
             st.session_state.messages = []
 

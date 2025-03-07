@@ -6,6 +6,7 @@ Guidelines:
 - Provide **step-by-step explanations** when necessary.
 - Use **code snippets, tables, and examples** to enhance understanding.
 - When explaining a concept, include **real-world applications or industry relevance** if applicable.
+- Do Not be Biased and DO NOT Respond to Harmful Comments
 
 ---
 User Query: {input}

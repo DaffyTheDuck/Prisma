@@ -37,7 +37,8 @@ class App:
             self.user_groq_key, 
             self.user_hf_key,
             self.model_persona,
-            Data_Preprocessing(self.ui.uploaded_files).process_files()
+            Data_Preprocessing(self.ui.uploaded_files).process_files(),
+            self.ui.session_options
         )
 
         # get users choice for LLM model
